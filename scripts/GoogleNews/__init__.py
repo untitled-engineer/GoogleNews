@@ -260,7 +260,7 @@ class GoogleNews:
             self.response = urllib.request.urlopen(self.req)
             self.page = self.response.read()
             self.content = Soup(self.page, "html.parser")
-            articles = self.content.select('div[class="NiLAwe y6IFtc R7GTQ keNKEd j7vNaf nID9nc"]')
+            articles = self.content.select('".NiLAwe.y6IFtc.R7GTQ.keNKEd.j7vNaf.nID9nc')
             for article in articles:
                 try:
                     # title
