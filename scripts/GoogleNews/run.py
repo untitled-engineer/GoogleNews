@@ -1,13 +1,15 @@
 
 ### MODULES
+import datetime
 import re
 import urllib.request
-import dateparser, copy
+
+import copy
+import dateparser
 from bs4 import BeautifulSoup as Soup, ResultSet
 from dateutil.parser import parse
-
-import datetime
 from dateutil.relativedelta import relativedelta
+
 
 ### METHODS
 
@@ -360,3 +362,4 @@ class GoogleNews:
         self.__links = []
         self.__results = []
         self.__totalcount = 0
+

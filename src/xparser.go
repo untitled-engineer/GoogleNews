@@ -106,7 +106,7 @@ func readHashes() {
 	fmt.Println("Завершено. Прочитано хешей: ", len(used))
 }
 
-func main() {
+func _main() {
 	readHashes()
 	//Открываем файл с цитатами...
 	quotesFile, err := os.OpenFile(QUOTES_FILE, os.O_APPEND|os.O_CREATE, 0666)
